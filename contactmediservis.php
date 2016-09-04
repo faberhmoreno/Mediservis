@@ -2,14 +2,37 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Mediservis - Bienvenidos</title>
+    <title>Mediservis - ienvenidos</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">  
     
     <link href="scripts/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="scripts/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+	<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBgHFtnsrFTuldLsl3BR2TADCzCRRLlx0Q"></script>
+	<script>
+			var myCenter=new google.maps.LatLng(4.435559, -75.215145);
 
+			function initialize()
+			{
+			var mapProp = {
+			  center:myCenter,
+			  zoom:15,
+			  mapTypeId:google.maps.MapTypeId.ROADMAP
+			  };
+
+			var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+			var marker=new google.maps.Marker({
+			  position:myCenter,
+			  animation:google.maps.Animation.BOUNCE
+			  });
+
+			marker.setMap(map);
+			}
+
+			google.maps.event.addDomListener(window, 'load', initialize);
+			</script>
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -36,6 +59,7 @@
     <link href="http://fonts.googleapis.com/css?family=Calligraffitti" rel="stylesheet" type="text/css">
 
     <link href="styles/custom.css" rel="stylesheet" type="text/css" />
+	<script src="email/validation.js" type="text/javascript"></script>
 </head>
 <body id="pageBody">
 
@@ -51,24 +75,22 @@
                             <img style="max-width:45%;" src="Logos/mediservislogo.png">
                         </div>
                     </div>
-
-						<div id="divMenuRight" class="pull-right">
-							<div class="navbar">
-								<button type="button" class="btn btn-navbar-highlight btn-large btn-primary" data-toggle="collapse" data-target=".nav-collapse">
-									NAVIGATION <span class="icon-chevron-down icon-white"></span>
-								</button>
-								<div class="nav-collapse collapse">
-									<ul class="nav nav-pills ddmenu">
-										<li class="dropdown"><a href="index.html">Home</a></li>
-										<li class="dropdown active"><a href="empresa.html">Empresa</a></li>
-										<li class="dropdown"><a href="servicios.html">Servicios</a></li>
-										<li class="dropdown"><a href="preguntasfrecuentes.html">Preguntas</a></li>
-										<li class="dropdown"><a href="contactmediservis.php">Contacto</a></li>
-									</ul>
-								</div>
-							</div>
-                    </div>
-
+                    <div id="divMenuRight" class="pull-right">
+                        <div class="navbar">
+                            <button type="button" class="btn btn-navbar-highlight btn-large btn-primary" data-toggle="collapse" data-target=".nav-collapse">
+                                NAVIGATION <span class="icon-chevron-down icon-white"></span>
+                            </button>
+                            <div class="nav-collapse collapse">
+                                <ul class="nav nav-pills ddmenu">
+                                    <li class="dropdown"><a href="index.html">Home</a></li>
+                                    <li class="dropdown"><a href="empresa.html">Empresa</a></li>
+                                    <li class="dropdown"><a href="servicios.html">Servicios</a></li>
+                                    <li class="dropdown"><a href="preguntasfrecuentes.html">Preguntas</a></li>
+                                    <li class="dropdown active"><a href="contactmediservis.php">Contacto</a></li>
+                                </ul>
+                            </div>
+                        </div>
+					   </div>
                 </div>
             </div>
         </div>
@@ -83,57 +105,55 @@
     <div class="divPanel page-content">
 
         <div class="breadcrumbs">
-                <a href="index.html">Home</a> &nbsp;/&nbsp; <span>Empresa</span>
+                <a href="index.html">Home</a> &nbsp;/&nbsp; <span>Contact Us</span>
             </div> 
 
         <div class="row-fluid">
-            <!--Edit Main Content Area here-->
-                <div class="span12" id="divMain">
+                <div class="span8" id="divMain">
 
-                    <h1 id="divHeaderLine1">¿Quienes Somos?</h1>
-                    <hr>
-					<img src="images/full-image.jpg" class="img-polaroid" style="margin:5px 0px 15px;" alt="">
-                    <p><strong>Mediservis del Tolima IPS S.A.S.</strong> Constituida el 16 de Febrero de 2016 en 
-                            la ciudad de Ibagué Tolima, es una empresa, dedicada a prestar servicios de 
-                            Salud especializados, teniendo como objetivo principal la atención integral de los 
-                            pacientes en la investigación clínica, para esto contamos con un grupo de 
-                            profesionales altamente calificados en las diferentes áreas: Cardiología,
-                            Endocrinología, Nefrología, Neumología, Medicina Interna, Medicina General,
-                            Servicio Farmacéutico, Laboratorio Clínico y toma de muestras, lo cual nos
-                            permite ofrecer servicios a nuestros clientes de la más alta calidad.</p>				
-                    
-                    <h1>Misión</h1>                                       					
-                    <p>Somos una institución prestadora de servicios de salud IPS, brindamos apoyo en 
-                        Investigación Clínica a Laboratorios Farmacéuticos, Laboratorio Clínico y atención 
-                        en salud médica especializada, de calidad y compromiso, buscando beneficio para 
-                        la comunidad científica y la población en general, mediante una atención integral y 
-                        ética, a cargo de un equipo de profesionales calificados y con alto sentido humano.</p>
-                    <h1>Visión</h1>   
-                    <p>
-                        Para el año 2021, seremos reconocidos Nacional e Internacional, como una
-                        empresa líder en Investigación Clínica, con los más altos estándares de calidad,
-                        brindando seguridad, confianza y óptimos resultados a todos los grupos de interés.
-                    </p>
-					<!--Edit Blockquote here-->
-					<!--<blockquote>
-					
-                    <h3 class="text-success">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</h3>
-                    <small>Someone famous <cite title="Source Title">Source Title</cite></small>
-					
-                    </blockquote>-->
-					<!--/End Blockquote-->
-					
-                    <!--<p>Etiam euismod magna ut ligula iaculis, non gravida arcu aliquet. Donec feugiat consequat orci in eleifend. Curabitur sed 
-					sem lectus. Phasellus accumsan lacinia urna, tristique auctor magna sollicitudin tincidunt. Sed congue sodales consequat. 
-					Integer luctus lacinia blandit. Nullam imperdiet leo vitae eros porttitor, eu venenatis leo volutpat. Integer iaculis odio nec odio fringilla, nec tempus quam dapibus. Pellentesque ultricies at quam in mollis. Suspendisse mattis risus in ipsum placerat, vel mollis risus interdum. Sed ut porta dolor, vitae accumsan lorem.</p>		
-					
-					<p>Pellentesque accumsan magna nec felis blandit tincidunt. Vivamus quis dapibus urna. Duis quis tincidunt dui. Cras hendrerit varius libero, nec facilisis eros tempor id. Etiam vulputate massa ac ultrices malesuada. Sed aliquam suscipit volutpat. Curabitur pulvinar nibh viverra, sollicitudin dui vitae, posuere turpis. Pellentesque viverra lobortis neque, non facilisis lorem rutrum et. In hac habitasse platea dictumst. Aliquam pharetra nunc purus, vitae gravida diam vulputate sit amet. Proin porta iaculis pretium. Duis at nulla convallis, fermentum leo ut, ullamcorper nisl.</p>
-					
-                    <p>Aenean at porta elit. Etiam vitae justo nisl. Integer condimentum eros nec scelerisque viverra. Suspendisse potenti. Maecenas magna nibh, fringilla id lobortis eu, imperdiet congue nisl. Phasellus dui est, porttitor a massa in, ullamcorper convallis eros. Praesent felis justo, porta vitae nulla in, interdum dapibus risus. Nulla cursus eros blandit mollis viverra. Integer adipiscing sit amet urna ut suscipit. Aenean laoreet nisi risus, et feugiat justo gravida sit amet. Vestibulum elementum eget lorem ut pharetra. Mauris auctor egestas pulvinar. Aliquam fringilla urna vitae sapien tempus, vel sodales sapien mattis. Aenean blandit tortor eget mi suscipit commodo. Curabitur nec dapibus est, ut gravida dui. Praesent porta enim quis viverra imperdiet.</p>-->                 		
-		                            
+                    <h1>Contact Us</h1>
+                   	<h3 style="color:#FF6633;"><?php echo $_GET[msg];?></h3>
+					<hr>
+			<!--Start Contact form -->		                                                
+<form name="enq" method="post" action="email/" onsubmit="return validation();">
+  <fieldset>
+    
+	<input type="text" name="name" id="name" value=""  class="input-block-level" placeholder="Name" />
+    <input type="text" name="email" id="email" value="" class="input-block-level" placeholder="Email" />
+    <textarea rows="11" name="message" id="message" class="input-block-level" placeholder="Comments"></textarea>
+    <div class="actions">
+	<input type="submit" value="Send Your Message" name="submit" id="submitButton" class="btn btn-info pull-right" title="Click here to submit your message!" />
+	</div>
+	
+	</fieldset>
+</form>  				 
+			<!--End Contact form -->											 
                 </div>
-            <!--End Main Content Area-->
-            </div>
+				
+			<!--Edit Sidebar Content here-->	
+                <div class="span4 sidebar">
+
+                    <div class="sidebox">
+                        <h3 class="sidebox-title">Contact Information</h3>
+                    <div id="googleMap" class="sidebox" style="width:auto;height:200px;"></div>
+					<p>
+                        <address><strong>Mediservis del Tolima IPS S.A.S.</strong><br />
+                        Cra 4B # 39B-44, La Macarena parte alta<br />
+                        Ibagué Tolima, Colombia.<br />
+                        <abbr title="Phone">Tel:</abbr> (8) 264 2122 / 304-5324 149</address> 
+                        <address>  <strong>Email</strong><br />
+                        <a href="mailto:#">info@mediservisdeltolima.com</a></address>  
+                    </p>     
+                                         					
+                    </div>
+					
+					
+                    
+                </div>
+			<!--/End Sidebar Content-->
+				
+				
+            </div>			
 
         <div id="footerInnerSeparator"></div>
     </div>
@@ -193,28 +213,28 @@
                 </div>
                 <div class="span3" id="footerArea4">
 
-                    <h3>Contactenos</h3>  
+                    <h3>Get in Touch</h3>  
                                                                
                     <ul id="contact-info">
                     <li>                                    
                         <i class="general foundicon-phone icon"></i>
-                        <span class="field">Teléfono:</span>
+                        <span class="field">Phone:</span>
                         <br />
-                        (8) 264 2122 / 304-5324 149                                                                     
+                        (123) 456 7890 / 456 7891                                                                      
                     </li>
                     <li>
                         <i class="general foundicon-mail icon"></i>
                         <span class="field">Email:</span>
                         <br />
-                        <a href="mailto:info@mediservisdeltolima.com" title="Email">info@mediservisdeltolima.com</a>
+                        <a href="mailto:info@yourdomain.com" title="Email">info@yourdomain.com</a>
                     </li>
                     <li>
                         <i class="general foundicon-home icon" style="margin-bottom:50px"></i>
-                        <span class="field">Dirección:</span>
+                        <span class="field">Address:</span>
                         <br />
-                        Cra 4B # 39B-44<br />
-                        La Macarena parte alta<br />
-                        Ibagué Tolima, Colombia.
+                        123 Street<br />
+                        12345 City, State<br />
+                        Country
                     </li>
                     </ul>
 
@@ -247,7 +267,16 @@
 <script src="scripts/jquery.min.js" type="text/javascript"></script> 
 <script src="scripts/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 <script src="scripts/default.js" type="text/javascript"></script>
+<?php
+// the message
+$msg = "First line of text\nSecond line of text";
 
+// use wordwrap() if lines are longer than 70 characters
+$msg = wordwrap($msg,70);
+
+// send email
+mail("someone@example.com","My subject",$msg);
+?>
 
 
 

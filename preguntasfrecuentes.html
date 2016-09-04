@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Mediservis del Tolima - Bienvenidos</title>
+    <title>Mediservis - Bienvenidos</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Mediservis del Tolima">
     <meta name="author" content="Mediservis del Tolima">
@@ -47,12 +47,12 @@
             <div class="row-fluid">
                 <div class="span12">
 
-
                     <div id="divMenuLeft" class="span6">
                         <div class="navbar">
                             <img style="max-width:45%;" src="Logos/mediservislogo.png">
                         </div>
                     </div>
+
 
                     <div id="divMenuRight" class="pull-right">
 
@@ -64,8 +64,8 @@
                                 <ul class="nav nav-pills ddmenu">
                                     <li class="dropdown"><a href="index.html">Home</a></li>
                                     <li class="dropdown"><a href="empresa.html">Empresa</a></li>
-                                    <li class="dropdown active"><a href="servicios.html">Servicios</a></li>
-                                    <li class="dropdown"><a href="preguntasfrecuentes.html">Preguntas</a></li>
+                                    <li class="dropdown"><a href="servicios.html">Servicios</a></li>
+                                    <li class="dropdown active"><a href="preguntasfrecuentes.html">Preguntas</a></li>
                                     <li class="dropdown"><a href="contactmediservis.php">Contacto</a></li>
                                 </ul>
                             </div>
@@ -86,32 +86,103 @@
     <div class="divPanel page-content">
 
         <div class="breadcrumbs">
-                <a href="index.html">Home</a> &nbsp;/&nbsp; <span>Servicios</span>
+                <a href="index.html">Home</a> &nbsp;/&nbsp; <span>Preguntas</span>
             </div> 
-
+        <!--Edit Main Content Area here-->
         <div class="row-fluid">
-			
-			<!--Edit Sidebar Content here-->
-                <div class="span4 sidebar">                    
-					<div class="sidebox">
-					<h3 class="sidebox-title">Sample Sidebar Content</h3>
-						<div class="accordion" id="accordion2">
-                        <div class="accordion-group">
-                            <div class="accordion-heading">
-                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-                                    En caso de pacientes menores de edad.
-                                </a>
+                <div class="span8" id="divMain">
+
+                    <h1>Preguntas Frecuentes</h1>
+					<p>
+                        <div class="accordion" id="accordion2">
+                            <div class="accordion-group">
+                                <div class="accordion-heading">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#preguntaUno">
+                                        ¿Debo solicitar cita para los exámenes de Laboratorio?
+                                    </a>
+                                </div>
+                                <div id="preguntaUno" class="accordion-body collapse in">
+                                    <div class="accordion-inner">
+                                        Para la mayoría de exámenes de Laboratorio Clínico no se requiere cita previa, sin embargo existen algunos exámenes especializados para los que se requiere.
+                                    </div>
+                                </div>
                             </div>
-                            <div id="collapseOne" class="accordion-body collapse in">
-                                <div class="accordion-inner">
-									<ol>
-										<li>Cuando el paciente es menor de edad, normalmente son sus padres, sus familiares o allegados quienes pueden representarlo, recibir la información y decidir.</li>
-										<li>Si el paciente a pesar de la minoría de edad y su estado de salud, está en condiciones de recibir información y tomar decisiones se le reserva el derecho a la intimidad. Sin embargo, en estos casos, es recomendable que los padres, tutores, familiares o allegados cercanos, reciban la información y le ayuden a decidir al paciente y diligenciar con él, los documentos respectivos.</li> 
-										 
-									</ol>
-								</div>
+                            <div class="accordion-group">
+                                <div class="accordion-heading">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#preguntaDos">
+                                        ¿A qué número telefónico puedo llamar para el servicio de Laboratorio Domiciliario?
+                                    </a>
+                                </div>
+                                <div id="preguntaDos" class="accordion-body collapse">
+                                    <div class="accordion-inner">
+                                        Llamar al 2642122 o al 3045324149
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-group">
+                                <div class="accordion-heading">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#preguntaTres">
+                                        ¿En que horarios puedo reclamar los resultados de laboratorios y/o exámenes?
+                                    </a>
+                                </div>
+                                <div id="preguntaTres" class="accordion-body collapse">
+                                    <div class="accordion-inner">
+                                        Lunes a viernes 7am a 12m – 2pm a 6pm sábado de 7a.m a 12 p.m.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-group">
+                                <div class="accordion-heading">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#preguntaCuatro">
+                                        ¿En caso de pérdida o extravío de los resultados puedo solicitar una copia?
+                                    </a>
+                                </div>
+                                <div id="preguntaCuatro" class="accordion-body collapse">
+                                    <div class="accordion-inner">
+                                        Sí, se puede solicitar copia de los reportes de los resultados, presentando fotocopia de la cédula, este reporte no tiene costo.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-group">
+                                <div class="accordion-heading">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#preguntaCinco">
+                                        ¿Es posible el envió de los resultados a mi correo electrónico?
+                                    </a>
+                                </div>
+                                <div id="preguntaCinco" class="accordion-body collapse">
+                                    <div class="accordion-inner">
+                                        Si, los reportes o lectura de sus imágenes se pueden enviar a su e-mail, los resultados de exámenes de Laboratorio se pueden enviar mediante correo electrónico siempre y cuando no sean de entrega personal como por ejemplo: Pruebas de embarazo, HIV, Anticuerpos para hepatitis, entre otros. Consulte con el funcionario que realiza su atención
+                                    </div>
+                                </div>
                             </div>
                         </div>
+
+
+                                           
+                </div>
+				<!--Edit Sidebar Content Area here-->
+                <div class="span4 sidebar">
+
+                    <div class="sidebox">
+					
+						<h3 class="sidebox-title">Sample Sidebar Content</h3>
+						        <div class="accordion" id="accordion2">
+									<div class="accordion-group">
+										<div class="accordion-heading">
+											<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+												En caso de pacientes menores de edad.
+											</a>
+										</div>
+										<div id="collapseOne" class="accordion-body collapse in">
+										<div class="accordion-inner">
+											<ol>
+												<li>Cuando el paciente es menor de edad, normalmente son sus padres, sus familiares o allegados quienes pueden representarlo, recibir la información y decidir.</li>
+												<li>Si el paciente a pesar de la minoría de edad y su estado de salud, está en condiciones de recibir información y tomar decisiones se le reserva el derecho a la intimidad. Sin embargo, en estos casos, es recomendable que los padres, tutores, familiares o allegados cercanos, reciban la información y le ayuden a decidir al paciente y diligenciar con él, los documentos respectivos.</li> 
+												 
+											</ol>
+										</div>
+									</div>
+								</div>
                         <div class="accordion-group">
                             <div class="accordion-heading">
                                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
@@ -160,86 +231,20 @@
                             </div>
                         </div>
                     </div>
-						<div class="row-fluid">		
-		         <div>  
-					<p style="text-align: center">	
-                    <img src="Logos/certificacionIATA.png" class="img-polaroid" style="margin:5px 0px 15px;" alt="IATA">   
-					</p>
-				</div>          
-			 
-            </div>
-				               	
+					<div class="row-fluid">		
+						 <div>  
+							<p style="text-align: center">	
+							<img src="Logos/certificacionIATA.png" class="img-polaroid" style="margin:5px 0px 15px;" alt="IATA">   
+							</p>
+						</div>          
+					 
 					</div>
-				</div>			
-		    			
-				<!--/End Sidebar Content -->        				
-					                 
-            	<!--Edit Main Content Area here-->
-                <div class="span8" id="divMain">
-
-                    <h1>Nuestros Servicios</h1>
-                    <ul class="nav nav-tabs">
-                        <li class="active"><a href="#laboratorioclinico" data-toggle="tab">Laboratorio Clínico</a></li>
-                        <li><a href="#medicinainterna" data-toggle="tab">Medicina Interna</a></li>
-                        <li><a href="#tomademuestras" data-toggle="tab">Toma de Muestras</a></li>
-                        <li><a href="#cardiologia" data-toggle="tab">Consulta por Cardiología</a></li>
-                        <li><a href="#nefrologia" data-toggle="tab">Consulta por Nefrología</a></li>
-                    </ul>
-                    <div class="tab-content">
-                        <div class="tab-pane fade in active" id="laboratorioclinico">
-                            <p>Nuestros procesos están apoyados en equipos automatizados para diagnóstico en las áreas de hematología, química sanguínea, entre otros, contamos con una amplia red de apoyo, Laboratorio Clínico Central, El Laboratorio De Investigación  Con una oportunidad de entrega de resultado de 2 horas para exámenes de rutina.</p>
-                            <p style="text-align: center"><img src="images/laboratorioclinico.jpg" class="img-rounded" alt="" />
-                        </div>
-                        <div class="tab-pane fade" id="medicinainterna">
-                            <p>
-                                Consulta médica realizada por profesionales especialistas en Medicina Interna, con las más altas cualidades  humanas y científicas, quien esatienden integralmente los problemas de salud en pacientes adultos.
-                                <ul>
-                                    <li>Guía al paciente dirigiendo y coordinando la actuación frente a su enfermedad y coordinando al resto de especialistas necesarios para obtener un diagnóstico y tratamiento adecuado.</li>
-                                    <li>Enfermedades de los órganos del adulto y la interrelación o influencia de la afección de un órgano a otro.</li>
-                                    <li>Comprende el enfoque integral del paciente.</li>
-                                    <li>El internista es el médico más capacitado para realizar un diagnóstico y un tratamiento acorde con la necesidad de los pacientes, especialmente cuando dicho paciente padece de múltiples enfermedades.</li>
-                                </ul>
-                                Son patologías frecuentemente manejadas por el servicio:
-                                <ul>
-                                    <li>Diabetes Mellitus.</li>
-                                    <li>Hipertensión Arterial.</li>
-                                    <li>Infección de Vías Urinarias.</li>
-                                    <li>Trombosis Venosa Profunda.</li>
-                                    <li>Alteración de líquidos y electrólitos.</li>
-                                    <li>Delirium.</li>
-                                </ul>
-                            </p>
-                            <p style="text-align: center"><img src="images/medicina-interna.jpg" class="img-rounded" alt="" />
-                        </div>
-                        <div class="tab-pane fade" id="tomademuestras">
-                            <p>
-                            <p>Pensando en apoyar a las diferentes empresas en la toma de exámenes para el bienestar de sus colaboradores y/o Clientes en Promoción y prevención, Salud Ocupacional, contamos  con el servicio de toma de muestras que puede ser realizada por nuestro personal directamente en su sede.</p>
-                            <p style="text-align: center"><img src="images/toma-de-muestras.jpg" class="img-rounded" alt="" />
-                        </div>
-                        <div class="tab-pane fade" id="cardiologia">
-                            <p><strong>El Servicio de Cardiología</strong> cuenta con personal altamente calificado, con amplia experiencia en Cardiología clínica y especialista en hemodinamia, estudios de diagnóstico no invasivo.</p>
-                            <br />
-                            <p style="text-align: center"><img src="images/cardiología.jpg" class="img-rounded" alt="" />
-                        </div>
-                        <div class="tab-pane fade" id="nefrologia">
-                            <p><strong>El Servicio de Nefrología</strong> está formado por personal altamente calificado para el diagnóstico y manejo de las enfermedades renales.</p>
-                            <br />
-                            <p style="text-align: center"><img src="images/nefrologia.jpg" class="img-rounded" alt="" />
-                        </div>
                     </div>
-                    <br />
-                    <!--<p>Aliquam a tellus quam. Phasellus sit amet bibendum nunc. Donec lobortis nulla diam, a laoreet nisi rhoncus vitae. Suspendisse tincidunt, nulla sed convallis consectetur, diam enim ultricies nulla, a luctus odio nisi in ligula. Aenean ornare rhoncus fermentum. Suspendisse et enim in nibh dictum blandit et id nisi. Duis mollis, libero id venenatis viverra, metus lacus placerat turpis, at semper orci odio id lectus. Proin fringilla quam porttitor est mattis, id aliquam est laoreet. Nulla congue urna nisi, eu commodo dolor aliquet eget. Donec ullamcorper diam quis porttitor convallis. Aliquam erat volutpat. Phasellus pulvinar sagittis nunc et adipiscing.</p>
-                    <p><img src="images/circle.jpg" class="img-circle pull-left" style="margin:5px 15px 10px;" alt="" />Duis facilisis tellus ante, eu sodales neque ornare vitae. Pellentesque laoreet velit diam, quis tempor est fringilla sed. Curabitur in ullamcorper lectus, et gravida mauris. Suspendisse tristique euismod metus, quis facilisis lectus cursus faucibus. Nulla sed leo sed tellus egestas mattis sed id libero. Aenean at scelerisque augue. Phasellus at sem porttitor, auctor metus pharetra, lacinia sapien.</p>
-                    <p>Etiam enim dui, dictum vitae lobortis quis, placerat feugiat leo. Sed commodo elit orci, non tincidunt velit suscipit in. Nulla facilisi. Praesent vel eros tristique, lobortis orci vitae, interdum quam. <img src="images/circle2.jpg" class="img-circle pull-right" style="margin:10px 15px 10px;" alt="" />In hac habitasse platea dictumst. Praesent lobortis iaculis ante, at laoreet est pulvinar vel. Cras vulputate tempus nulla eget venenatis. Suspendisse magna lacus, tincidunt nec pulvinar sit amet, semper quis neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras vehicula volutpat enim, id vehicula dolor porttitor in. Nam vehicula velit erat, eu consectetur elit luctus ut. Aliquam ac convallis enim, et venenatis dui. Maecenas et leo metus. Etiam diam ante, lacinia vitae orci vel, dignissim vestibulum tortor. Aliquam elit sapien, pellentesque eu consectetur et, tempor vitae nisl.</p>		
-                    <p>Donec arcu nisi, euismod vitae facilisis id, pulvinar eget tortor. Nunc lobortis ultrices pellentesque. Sed sollicitudin dapibus erat a interdum. Cras massa mauris, rutrum vel nisi non, malesuada lobortis velit. Fusce eu tellus justo. Donec dictum, purus at adipiscing rhoncus, risus libero bibendum ipsum, mollis vestibulum arcu arcu eget elit. In tempor laoreet ultricies. 
-					Maecenas lacus neque, fermentum in blandit a, mollis in libero. Vivamus ornare eros quis arcu cursus, at luctus nisi accumsan.
-					</p>-->					
-				</div>	                             
-                    					                  
-				<!--/End Main Content Area here-->	                
-					
-							
+                    
+                </div>
+				<!--End Sidebar Area here-->
             </div>
+			<!--End Main Content Area here-->
 
         <div id="footerInnerSeparator"></div>
     </div>
